@@ -1,0 +1,85 @@
+body{
+  background-color: #fff4f2;
+}
+.sideBar{
+  width: 350px;
+  height: 900px;
+  float: left;
+  background-color: 	#e0ffff;
+}
+.price{
+  margin: 20px 0 10px 20px;
+}
+p{
+  margin: 2px;
+  font-size: 18px;
+}
+input{
+  margin: 0 0 10px 0;
+}
+.colors{
+  width: 230px;
+  margin-left: 20px;
+}
+.color{
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  float: left;
+  margin: 10px 0 0 10px;
+}
+.content{
+  width: 1200px;
+  float: left;
+  margin-left: 20px;
+  background-color: #c6fcff;
+}
+.gridView{
+  width: 350px;
+  height: 350px;
+  padding: 10px;
+  margin: 20px 0 0 0px;
+  float: left;
+
+}
+.listView{
+  padding: 20px;
+  float: left;
+
+}
+.listView img{
+  float: left;
+}
+.listView ul{
+    float: left;
+    margin-left: 10px;
+}
+
+a:link{
+  color: #9d0216;
+}
+img{
+  width: 320px;
+  height: 213px;
+  align-items: center;
+}
+
+ul{
+	width: 320px;
+	padding-left: 5px;
+  margin-top: 0px;
+
+}
+ul li{
+  list-style: none;
+}
+
+ul li h3, h2{
+  color: #3f012c;
+}
+ul.product{
+  width: 450px;
+}
+ul.product li{
+  padding-bottom: 10px;
+}

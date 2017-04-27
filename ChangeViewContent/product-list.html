@@ -1,0 +1,14 @@
+<div class="content" ng-controller="MainCtrl">
+  <div class="buttons">
+    <button ng-click='isActive = true'  ng-clas='gridView'>GridView</button>
+    <button ng-click='isActive = false' ng-class='listView'>ListView</button>
+  </div>
+  <div ng-class="{'gridView': isActive == true, 'listView': isActive == false}" ng-repeat="product in products|byPrice:filter.price|byColor:filter.color|byCategory:filter.category">  <!--|byPrice:filter.price -->
+    <img ng-src="{{'http://52.17.8.147'+product.images[0].url}}"/>
+      <ul>
+        <li><a ng-href="/#/products/{{product._id}}"><h3>{{product.name}}</h3></a></li>
+        <li>{{product.details}}</li>
+        <li>{{'Price: '+product.price+' '+product.currency}}</li>
+      </ul>
+  </div>
+</div>

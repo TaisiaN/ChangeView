@@ -1,0 +1,11 @@
+<div class="content" ng-controller="prdCtrl">
+  <div class="listView">
+        <img ng-src="{{'http://52.17.8.147'+product.images[0].url}}"/>
+          <ul class="product">
+            <li><h2>{{product.name}}</h2></li>
+            <li>{{product.details}}</li>
+            <li>{{"Cod produs: "+product.sku}}</li>
+            <li>{{'Price: '+product.price+' '+product.currency}}</li>
+          </ul>
+      </div>
+</div>

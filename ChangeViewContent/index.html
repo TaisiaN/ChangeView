@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="NewApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.angularjs.org/1.2.15/angular.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.2.15/angular-route.js"></script>
+    <script src="data-list.js"></script>
+    <script type="text/javascript" src="angular.js"></script>
+  </head>
+  <body >
+    <div class="sideBar" ng-controller="sidebarCtrl">
+      <div class="price">
+        <p> Price:</p>
+        <input type="number" ng-model="filter.price.min" placeholder="min" />
+		    <input type="number" ng-model="filter.price.max" placeholder="max" /><br/>
+        <p>Category:</p>
+        <select ng-model="filter.category"  ng-options="category for category in categoryList">
+          <option value="">Select a category</option>
+        </select>
+      </div>
+      <div class="colors" >
+        <p>Color:</p>
+        <div class="color" ng-repeat="color in colorMap" ng-style="{'background': color.color}" ng-click="filter.color = color.id" ></div>
+      </div>
+  </div>
+  <div>
+    <div ng-view></div>
+  </div>
+  </body>
+</html>
